@@ -58,7 +58,7 @@ const transactions = ref([
 </script>
 <template>
     <!-- Dashboard Counter -->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-5 xl:gap-6 xxl:gap-10 py-10">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-5 xl:gap-6 xxl:gap-10">
         <div class="bg-white shadow rounded-lg p-4 xl:p-6">
             <div class="flex items-start justify-between gap-3 mb-5">
                 <span class="w-12 h-12 flex items-center justify-center bg-rose-100 text-rose-600 rounded-lg">
@@ -103,7 +103,7 @@ const transactions = ref([
     <!-- Dashboard Counter -->
 
     <!-- Dashboard Chart & Table -->
-    <div class="flex flex-col md:flex-row gap-5 pb-10">
+    <div class="flex flex-col md:flex-row gap-5 py-10">
         <div class="w-full xl:w-1/3 bg-white rounded-lg p-4 shadow-md">
             <CircleCharts class="max-h-92" />
         </div>
@@ -140,7 +140,7 @@ const transactions = ref([
     <!-- Dashboard Chart & Table -->
 
     <!-- Dashboard Chart -->
-    <div class="flex flex-col md:flex-row gap-5 pb-10">
+    <div class="flex flex-col md:flex-row gap-5">
         <div class="w-full xl:w-3/5 bg-white rounded-lg p-4 shadow-md">
             <VarChart/>
         </div>

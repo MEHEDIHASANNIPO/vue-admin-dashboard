@@ -23,13 +23,15 @@ provide('notificationview', notificationview)
 
     <div class="flex-1 ms-0 lg:ms-72 py-5 px-2 xl:px-5 xxl:px-10 bg-gray-50 min-h-screen max-sm:w-full">
       <MenuBar/>
-      <router-view v-slot="{ Component, route }">
-        <transition name="route" mode="out-in">
-          <div :key="route.name">
-            <component :is="Component" />
-          </div>
-        </transition>
-      </router-view>
+      <section class="py-10">
+        <router-view v-slot="{ Component, route }">
+          <transition name="route" mode="out-in">
+            <div :key="route.name">
+              <component :is="Component" />
+            </div>
+          </transition>
+        </router-view>
+      </section>
     </div>
   </div>
   <!-- Dashboard End -->

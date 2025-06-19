@@ -3,6 +3,7 @@
 import { inject, ref } from 'vue';
 import Notification from './Notification.vue';
 import Profile from './Profile.vue';
+import { PageName } from './PageName';
 
 /** All Variables */
 const navValue = inject('navbar');
@@ -25,7 +26,7 @@ const showNavbar = () => {
         </div>
 
         <!-- Mobile -->
-        <h2 class="hidden lg:block text-2xl font-bold text-mainColor">Dashboard</h2>
+        <h2 class="hidden lg:block text-2xl font-bold text-mainColor">{{ PageName }}</h2>
         <h2 class="block lg:hidden text-center text-mainColor text-xl md:text-2xl font-bold">MHN <font-awesome-icon :icon="['fas', 'bolt']" class="text-lightColor text-2xl md:text-3xl" /> Panel</h2>
         <!-- Mobile -->
 

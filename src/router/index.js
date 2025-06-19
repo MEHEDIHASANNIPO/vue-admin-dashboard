@@ -10,9 +10,9 @@ const router = createRouter({
       component: Dashboard,
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue'),
+      path: '/form-elements',
+      name: 'formElement',
+      component: () => import('../views/Forms/FormEelements.vue'),
     },
   ],
 })
