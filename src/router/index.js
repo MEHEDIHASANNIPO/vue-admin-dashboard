@@ -12,7 +12,12 @@ const router = createRouter({
     {
       path: '/form-elements',
       name: 'formElement',
-      component: () => import('../views/Forms/FormEelements.vue'),
+      component: () => import('../views/Forms/FormElements.vue'),
+    },
+    {
+      path: '/form-group',
+      name: 'formGroup',
+      component: () => import('../views/Forms/FormGroup.vue'),
     },
   ],
 })
