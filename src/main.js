@@ -21,6 +21,9 @@ import FilePondPluginFileValidateSize from 'filepond-plugin-file-validate-size'
 
 import VeeValidationPlugin from '@/utilis/validation';
 
+import VPagination from "@hennge/vue3-pagination";
+import "@hennge/vue3-pagination/dist/vue3-pagination.css";
+
 import App from './App.vue'
 import router from './router'
 
@@ -47,5 +50,7 @@ app.component('font-awesome-icon', FontAwesomeIcon)
 app.use(VeeValidationPlugin)
 
 app.component('FilePond', FilePondComponent)
+
+app.component('v-pagination', VPagination)
 
 app.mount('#app')

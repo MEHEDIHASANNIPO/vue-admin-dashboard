@@ -24,6 +24,11 @@ const router = createRouter({
       name: 'basicTable',
       component: () => import('../views/Table/BasicTable.vue'),
     },
+    {
+      path: '/paginate-table',
+      name: 'paginateTable',
+      component: () => import('../views/Table/PaginateTable.vue'),
+    },
   ],
 })
 

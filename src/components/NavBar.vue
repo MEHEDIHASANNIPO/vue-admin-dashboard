@@ -39,7 +39,7 @@ const toggleMenu = (menuName) => {
                 <transition name="slide">
                     <ul v-show="activeMenu === 'menu2'" class="overflow-hidden bg-gray-800 py-1.5 my-3 space-y-4 list-disc ps-8 transition-all ease-in-out duration-500 marker:text-lightColor">
                          <li><router-link :to="{ name: 'basicTable' }" class="text-sm font-medium text-gray-300 hover:text-lightColor">Basic Table</router-link></li>
-                        <li><a href="" class="text-sm font-medium text-gray-300 hover:text-lightColor">Paginate Table</a></li>
+                        <li><router-link :to="{ name: 'paginateTable' }" class="text-sm font-medium text-gray-300 hover:text-lightColor">Paginate Table</router-link></li>
                     </ul>   
                 </transition>
             </li>
