@@ -19,6 +19,11 @@ const router = createRouter({
       name: 'formGroup',
       component: () => import('../views/Forms/FormGroup.vue'),
     },
+    {
+      path: '/basic-table',
+      name: 'basicTable',
+      component: () => import('../views/Table/BasicTable.vue'),
+    },
   ],
 })
 
