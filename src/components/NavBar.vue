@@ -38,7 +38,7 @@ const toggleMenu = (menuName) => {
                 </a>
                 <transition name="slide">
                     <ul v-show="activeMenu === 'menu2'" class="overflow-hidden bg-gray-800 py-1.5 my-3 space-y-4 list-disc ps-8 transition-all ease-in-out duration-500 marker:text-lightColor">
-                         <li><router-link :to="{ name: 'basicTable' }" class="text-sm font-medium text-gray-300 hover:text-lightColor">Basic Table</router-link></li>
+                        <li><router-link :to="{ name: 'basicTable' }" class="text-sm font-medium text-gray-300 hover:text-lightColor">Basic Table</router-link></li>
                         <li><router-link :to="{ name: 'paginateTable' }" class="text-sm font-medium text-gray-300 hover:text-lightColor">Paginate Table</router-link></li>
                     </ul>   
                 </transition>
@@ -74,8 +74,8 @@ const toggleMenu = (menuName) => {
                 </a>
                 <transition name="slide">
                     <ul v-show="activeMenu === 'menu5'" class="overflow-hidden bg-gray-800 py-1.5 my-3 space-y-4 list-disc ps-8 transition-all ease-in-out duration-500 marker:text-lightColor">
-                        <li><a href="" class="text-sm font-medium text-gray-300 hover:text-lightColor">403 Error</a></li>
-                        <li><a href="" class="text-sm font-medium text-gray-300 hover:text-lightColor">404 Error</a></li>
+                        <li><router-link :to="{ name: '403Error' }" class="text-sm font-medium text-gray-300 hover:text-lightColor">403 Error</router-link></li>
+                        <li><router-link :to="{ name: '404Error' }" class="text-sm font-medium text-gray-300 hover:text-lightColor">404 Error</router-link></li>
                     </ul>   
                 </transition>
             </li>
