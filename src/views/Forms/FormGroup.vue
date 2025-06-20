@@ -11,6 +11,7 @@ const schema = reactive({
   
 })
 const showPassword = ref(false)
+const files = ref([])
 
 /** All Method */
 const togglePassword = () => {
@@ -194,5 +195,19 @@ const togglePassword = () => {
         <label for="password-confirm-input" class="block text-sm font-bold text-gray-700 mb-1.5">Bio</label>
         <textarea name="textarea-input" id="textarea-group" class="block w-full p-2.5 rounded-r-md border border-gray-200 bg-gray-50 focus:outline-1 focus:outline-mainColor placeholder:text-sm" placeholder="Your Bio"></textarea>
     </div>
+  </div>
+
+  <!-- File Upload -->
+  <div class="bg-white rounded-lg p-5 shadow-md mt-10">
+    <h2 class="taxt-md font-bold mb-5">File Upload</h2>
+    <FilePond 
+      name="file"
+      allow-multiple="true"
+      max-file-size="2MB"
+      accepted-file-types="image/png, image/jpeg"
+      label-idle="Drop files or <span class='filepond--label-action'>Browse</span>"
+      :files="files"
+      @update:files="files = $event"
+    />
   </div>
 </template>
