@@ -24,6 +24,9 @@ import VeeValidationPlugin from '@/utilis/validation';
 import VPagination from "@hennge/vue3-pagination";
 import "@hennge/vue3-pagination/dist/vue3-pagination.css";
 
+import VueTelInput from 'vue3-tel-input'
+import 'vue3-tel-input/dist/vue3-tel-input.css'
+
 import App from './App.vue'
 import router from './router'
 
@@ -52,5 +55,7 @@ app.use(VeeValidationPlugin)
 app.component('FilePond', FilePondComponent)
 
 app.component('v-pagination', VPagination)
+
+app.use(VueTelInput)
 
 app.mount('#app')
