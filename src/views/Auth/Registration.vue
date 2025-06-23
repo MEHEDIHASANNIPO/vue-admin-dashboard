@@ -105,7 +105,7 @@ const togglePassword = () => {
                     <button type="submit" class="bg-mainColor text-white block w-full border-0 py-1 px-4 text-lg font-semibold font-outfit rounded-md">Create Account</button>
                 </vee-form>
 
-                <p class="text-sm text-gray-500 font-medium text-center mt-4">Dont have an account? <router-link :to="{ name: 'login' }" class="text-mainColor">Sign In</router-link></p>
+                <p class="text-sm text-gray-500 font-medium text-center mt-4">Already have an account? <router-link :to="{ name: 'login' }" class="text-mainColor">Sign In</router-link></p>
             </div>
         </div>
     </section>
