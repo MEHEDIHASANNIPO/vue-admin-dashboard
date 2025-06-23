@@ -8,7 +8,6 @@ const schema = reactive({
   email: 'required|email',
   password: 'min:4|max:25',
   confirmPassword: 'passwords_mismatch:@password',
-  privacy: 'checkbox',
 })
 const showPassword = ref(false)
 
@@ -97,11 +96,9 @@ const togglePassword = () => {
                     <!-- Privacy Policy -->
                     <div class="mb-6">
                         <div class="flex items-center">
-                            <input id="privacy" type="checkbox" name="privacy" class="w-4 h-4 text-white bg-gray-100 accent-mainColor border-gray-300 rounded focus:outline-0 focus:ring-2 focus:ring-mainColor" />
+                            <input id="privacy" type="checkbox" class="w-4 h-4 text-white bg-gray-100 accent-mainColor border-gray-300 rounded focus:outline-0 focus:ring-2 focus:ring-mainColor" />
                             <label for="privacy" class="ml-2 text-sm text-gray-700 font-medium cursor-pointer">I accept the terms and conditions</label>
                         </div>
-
-                        <ErrorMessage name="privacy" class="text-xs text-rose-500 font-semibold my-2" />
                     </div>
 
                     <!-- Submit Button -->
