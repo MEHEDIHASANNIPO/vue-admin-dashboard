@@ -40,7 +40,7 @@ export default {
         configure({
             generateMessage: (ctx) => {
                 const message = {
-                    required: `The field ${ctx.field} is reuiqred`,
+                    required: `The field ${ctx.field} is required`,
                     checkbox: `The field ${ctx.field} is must be select`,
                     min: `The field ${ctx.field} is too short`,
                     max: `The field ${ctx.field} is too long`,
