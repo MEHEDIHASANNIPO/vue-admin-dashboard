@@ -23,7 +23,7 @@ const lastPage = Math.ceil(products.productDataList.length / 10);
         <div class="flex justify-between items-center gap-5 mb-6">
             <h2 class="taxt-md font-medium">Total Count: <span class="text-mainColor font-bold">{{ products.productDataList.length }}</span></h2>
 
-            <input type="search" placeholder="Search..." class="py-2 px-3 border border-gray-200 rounded-md focus:outline-mainColor min-w-80">
+            <input type="search" placeholder="Search..." class="py-2 px-3 border border-gray-200 rounded-md focus:outline-mainColor max-w-40 md:min-w-80">
         </div>
 
         <!-- Table -->
@@ -85,7 +85,7 @@ const lastPage = Math.ceil(products.productDataList.length / 10);
         <div class="flex justify-between items-center gap-5 mb-6">
             <h2 class="taxt-md font-medium">Total Count: <span class="text-mainColor font-bold">{{ products.productDataList.length }}</span></h2>
 
-            <input type="search" placeholder="Search..." class="py-2 px-3 border border-gray-200 rounded-md focus:outline-mainColor min-w-80">
+            <input type="search" placeholder="Search..." class="py-2 px-3 border border-gray-200 rounded-md focus:outline-mainColor max-w-40 md:min-w-80">
         </div>
 
         <!-- Table -->
