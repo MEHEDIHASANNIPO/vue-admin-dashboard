@@ -45,6 +45,11 @@ const router = createRouter({
           name: 'pricing',
           component: () => import('../views/Ecommerce/Pricing.vue'),
         },
+        {
+          path: '/update-profile',
+          name: 'updateProfile',
+          component: () => import('../views/Profile/UpdateProfile.vue'),
+        },
       ]
     },
 
