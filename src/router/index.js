@@ -50,6 +50,11 @@ const router = createRouter({
           name: 'updateProfile',
           component: () => import('../views/Profile/UpdateProfile.vue'),
         },
+        {
+          path: '/update-password',
+          name: 'updatePassword',
+          component: () => import('../views/Profile/UpdatePassword.vue'),
+        },
       ]
     },
 

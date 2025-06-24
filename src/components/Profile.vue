@@ -34,7 +34,7 @@ const showProfile = () => {
         <div class="absolute top-[110%] right-0 w-52 py-2 px-4 origin-top bg-white shadow rounded-md z-10 transition ease-in duration-300" :class="!profiles ? 'scale-0 opacity-0 invisible' : ''">
             <ul>
                 <li class="py-1.5 text-sm font-medium text-gray-700"><router-link :to="{name: 'updateProfile'}">Profile Setting</router-link></li>
-                <li class="py-1.5 text-sm font-medium text-gray-700"><router-link>Change Password</router-link></li>
+                <li class="py-1.5 text-sm font-medium text-gray-700"><router-link :to="{name: 'updatePassword'}">Change Password</router-link></li>
                 <li class="py-1.5 text-sm font-medium text-gray-700 border-t border-gray-200"><a href="">Logout</a></li>
             </ul>
         </div>
