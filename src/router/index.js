@@ -35,6 +35,11 @@ const router = createRouter({
           name: 'paginateTable',
           component: () => import('../views/Table/PaginateTable.vue'),
         },
+        {
+          path: '/products',
+          name: 'products',
+          component: () => import('../views/Ecommerce/Products.vue'),
+        },
       ]
     },
 
