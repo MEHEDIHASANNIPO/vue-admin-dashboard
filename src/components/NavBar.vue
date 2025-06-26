@@ -80,9 +80,9 @@ const toggleMenu = (menuName) => {
                 </transition>
             </li>
             <li>
-                <a href="javascript:void(0)" class="text-sm font-medium text-gray-300 flex items-center justify-between gap-3 hover:text-lightColor">
+                <router-link :to="{ name: 'Charts' }" class="text-sm font-medium text-gray-300 flex items-center justify-between gap-3 hover:text-lightColor">
                     <span class="flex items-center gap-3"><font-awesome-icon :icon="['fas', 'chart-pie']" /> Charts</span>
-                </a>
+                </router-link>
             </li>
             <li>
                 <a href="javascript:void(0)" class="text-sm font-medium text-gray-300 flex items-center justify-between gap-3 hover:text-lightColor">

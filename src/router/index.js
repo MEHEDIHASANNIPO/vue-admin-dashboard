@@ -46,6 +46,11 @@ const router = createRouter({
           component: () => import('../views/Ecommerce/Pricing.vue'),
         },
         {
+          path: '/charts',
+          name: 'Charts',
+          component: () => import('../views/Chart/Charts.vue'),
+        },
+        {
           path: '/update-profile',
           name: 'updateProfile',
           component: () => import('../views/Profile/UpdateProfile.vue'),
