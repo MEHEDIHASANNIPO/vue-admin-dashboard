@@ -35,9 +35,9 @@ const showNavbar = () => {
                 <Notification/>
 
                 <div class="">
-                    <a href="" class="text-gray-700">
+                    <router-link :to="{ name: 'dashboard' }" class="text-gray-700">
                         <font-awesome-icon :icon="['fas', 'globe']" />
-                    </a>
+                    </router-link>
                 </div>
             </div>
 

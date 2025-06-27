@@ -64,7 +64,7 @@ const transactions = ref([
                 <span class="w-12 h-12 flex items-center justify-center bg-rose-100 text-rose-600 rounded-lg">
                     <font-awesome-icon :icon="['fas', 'dollar-sign']" />
                 </span>
-                <a href="" class="bg-mainColor text-white text-xs font-bold py-1 px-1.5 rounded-md">View All</a>
+                <router-link :to="{name: 'paginateTable'}" class="bg-mainColor text-white text-xs font-bold py-1 px-1.5 rounded-md">View All</router-link>
             </div>
             <h4 class="text-base xl:text-lg font-medium text-gray-700">Total Profit</h4>
             <h2 class="text-xl font-medium text-gray-600">$58,500</h2>
@@ -74,7 +74,7 @@ const transactions = ref([
                 <span class="w-12 h-12 flex items-center justify-center bg-green-100 text-green-600 rounded-lg">
                     <font-awesome-icon :icon="['fas', 'shopping-cart']" />
                 </span>
-                <a href="" class="bg-mainColor text-white text-xs font-bold py-1 px-1.5 rounded-md">View All</a>
+                <router-link :to="{name: 'paginateTable'}" class="bg-mainColor text-white text-xs font-bold py-1 px-1.5 rounded-md">View All</router-link>
             </div>
             <h4 class="text-base xl:text-lg font-medium text-gray-700">Total Sales</h4>
             <h2 class="text-xl font-medium text-gray-600">58</h2>
@@ -84,7 +84,7 @@ const transactions = ref([
                 <span class="w-12 h-12 flex items-center justify-center bg-cyan-100 text-cyan-600 rounded-lg">
                     <font-awesome-icon :icon="['fas', 'users']" />
                 </span>
-                <a href="" class="bg-mainColor text-white text-xs font-bold py-1 px-1.5 rounded-md">View All</a>
+                <router-link :to="{name: 'paginateTable'}" class="bg-mainColor text-white text-xs font-bold py-1 px-1.5 rounded-md">View All</router-link>
             </div>
             <h4 class="text-base xl:text-lg font-medium text-gray-700">Total Users</h4>
             <h2 class="text-xl font-medium text-gray-600">58</h2>
@@ -94,7 +94,7 @@ const transactions = ref([
                 <span class="w-12 h-12 flex items-center justify-center bg-yellow-100 text-yellow-600 rounded-lg">
                     <font-awesome-icon :icon="['fas', 'thumbs-up']" />
                 </span>
-                <a href="" class="bg-mainColor text-white text-xs font-bold py-1 px-1.5 rounded-md">View All</a>
+                <router-link :to="{name: 'paginateTable'}" class="bg-mainColor text-white text-xs font-bold py-1 px-1.5 rounded-md">View All</router-link>
             </div>
             <h4 class="text-base xl:text-lg font-medium text-gray-700">Total Subscribers</h4>
             <h2 class="text-xl font-medium text-gray-600">58</h2>

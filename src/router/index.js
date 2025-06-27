@@ -10,11 +10,15 @@ const router = createRouter({
       path: '/',
       component: DefaultLayout,
       children: [
+
+        // Dashboard Route
         {
           path: '/',
           name: 'dashboard',
           component: Dashboard,
         },
+
+        // Form Routes
         {
           path: '/form-elements',
           name: 'formElement',
@@ -25,6 +29,8 @@ const router = createRouter({
           name: 'formGroup',
           component: () => import('../views/Forms/FormGroup.vue'),
         },
+
+        // Table Routes
         {
           path: '/basic-table',
           name: 'basicTable',
@@ -35,6 +41,8 @@ const router = createRouter({
           name: 'paginateTable',
           component: () => import('../views/Table/PaginateTable.vue'),
         },
+
+        // Ecommerce Routes
         {
           path: '/products',
           name: 'products',
@@ -45,16 +53,22 @@ const router = createRouter({
           name: 'pricing',
           component: () => import('../views/Ecommerce/Pricing.vue'),
         },
+
+        // Charts Route
         {
           path: '/charts',
           name: 'Charts',
           component: () => import('../views/Chart/Charts.vue'),
         },
+
+        // Widget Route
         {
           path: '/widgets',
           name: 'Widget',
           component: () => import('../views/Widget/Widget.vue'),
         },
+
+        // Profile Routes
         {
           path: '/update-profile',
           name: 'updateProfile',
@@ -68,17 +82,7 @@ const router = createRouter({
       ]
     },
 
-    // Other Routes
-    {
-      path: '/error/403',
-      name: '403Error',
-      component: () => import('../views/Errors/403.vue'),
-    },
-    {
-      path: '/error/404',
-      name: '404Error',
-      component: () => import('../views/Errors/404.vue'),
-    },
+    // Authentication Routes
     {
       path: '/register',
       name: 'register',
@@ -89,6 +93,19 @@ const router = createRouter({
       name: 'login',
       component: () => import('../views/Auth/Login.vue'),
     },
+    
+    // Error Routes
+    {
+      path: '/error/403',
+      name: '403Error',
+      component: () => import('../views/Errors/403.vue'),
+    },
+    {
+      path: '/error/404',
+      name: '404Error',
+      component: () => import('../views/Errors/404.vue'),
+    },
+
   ],
 })
 
