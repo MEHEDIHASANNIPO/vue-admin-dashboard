@@ -1,10 +1,20 @@
-# admin-dashboard
+# vue-admin-dashboard
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a modern Vue.js admin panel built with **Vue 3**, **Tailwind CSS**, and **Vite**.  
+It features a clean UI, responsive design, and many essential functionalities needed for admin dashboards or web applications.
 
-## Recommended IDE Setup
+### ✨ Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- ⚡ Built with Vue 3 + Vite
+- 🎨 Styled using Tailwind CSS
+- 🌓 Dark mode support
+- 🔁 Vue Router integration
+- ♻️ Reusable components
+- 💡 Developer-friendly structure
+
+## 🔗 Live Demo
+
+👉 [View Live Demo](https://mehedihasannipo.com/portfolio/vue-mhn-panel/)
 
 ## Customize configuration
 
