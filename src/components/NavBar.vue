@@ -85,9 +85,9 @@ const toggleMenu = (menuName) => {
                 </router-link>
             </li>
             <li>
-                <a href="javascript:void(0)" class="text-sm font-medium text-gray-300 flex items-center justify-between gap-3 hover:text-lightColor">
+                <router-link :to="{ name: 'Widget' }" class="text-sm font-medium text-gray-300 flex items-center justify-between gap-3 hover:text-lightColor">
                     <span class="flex items-center gap-3"><font-awesome-icon :icon="['fas', 'pager']" /> Widgets</span>
-                </a>
+                </router-link>
             </li>
         </ul>
     </div>

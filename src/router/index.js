@@ -51,6 +51,11 @@ const router = createRouter({
           component: () => import('../views/Chart/Charts.vue'),
         },
         {
+          path: '/widgets',
+          name: 'Widget',
+          component: () => import('../views/Widget/Widget.vue'),
+        },
+        {
           path: '/update-profile',
           name: 'updateProfile',
           component: () => import('../views/Profile/UpdateProfile.vue'),
