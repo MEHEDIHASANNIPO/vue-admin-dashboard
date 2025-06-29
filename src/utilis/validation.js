@@ -47,7 +47,7 @@ export default {
                     email: `The field ${ctx.field} must be a valid email address`,
                     alpha_spaces: `The field ${ctx.field} may only contains alphabatical characters and spaces`,
                     min_value: `The field ${ctx.field} is too low`,
-                    max_value: `The field ${ctx.field} is too long`,
+                    max_value: `The field ${ctx.field} is too high`,
                     passwords_mismatch: `Password didn't matched!`,
                     excluded: `You are now allowed to use this value for the field ${ctx.field}.`,
                     url: `The field ${ctx.field} must be a valid url`,
